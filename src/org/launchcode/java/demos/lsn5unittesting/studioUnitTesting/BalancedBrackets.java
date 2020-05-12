@@ -1,5 +1,4 @@
-package main;
-
+package org.launchcode.java.demos.lsn5unittesting.studioUnitTesting;
 
 public class BalancedBrackets {
     /**
@@ -27,6 +26,9 @@ public class BalancedBrackets {
             if (ch == '[') {
                 brackets++;
             } else if (ch == ']') {
+                if(brackets == 0) {
+                    return false;
+                }
                 brackets--;
             }
         }
