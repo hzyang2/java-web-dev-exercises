@@ -5,13 +5,17 @@ public class Cat {
     private boolean tired = false;
     private boolean hungry = false;
     private double weight;
-
+//    private String name;
     // The biological family for all cat species
     private String family = "Felidae";
 
     public Cat (double aWeight) {
         weight = aWeight;
     }
+//
+//    public Cat() {
+//        weight = 13;
+//    }
 
     /**** Getters and Setters ****/
 
@@ -43,6 +47,14 @@ public class Cat {
         return family;
     }
 
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String aName) {
+//        name = aName;
+//    }
+
     /**** Instance Methods ****/
 
     // A cat is rested and hungry after it sleeps
@@ -66,3 +78,4 @@ public class Cat {
         return "Meeeeeeooooowww!";
     }
 }
+
